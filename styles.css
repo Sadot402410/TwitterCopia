@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Prompt:wght@300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt';
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.contenedor{
+    display: flex;
+}
+.logo{
+    background: url(img/fondo.png);
+    background-size: cover;
+    background-position: center center;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    max-width: 360px;
+    width: 100%;
+}
+
+.info{
+    width: 45%;
+    min-width: 700px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logoAzul{
+    width: 50px;
+}
+#iconoGoogle{
+    width: 20px;
+}
+#iconoApple{
+    width: 20px;
+}
+
+.titulo-1{
+    display: block;
+    font-size: 64px;
+    font-weight: 700;
+    margin: 48px 0;
+}
+
+.titulo-2{
+    display: block;
+    font-size: 31px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.boton{
+    display: block;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.boton:hover{
+    background: #eff3f4;
+}
+.boton img{
+    margin-right: 10px;
+}
+.separador{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.separador.linea{
+    border-top: 1px solid #eff3f4;
+    width: 45%;
+}
+.separador .texto{
+    margin: 0 5px;
+}
+.btnRegistrarse{
+    height: 40px;
+    background: rgb(29, 155, 240);
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 5px;
+    border: none;
+}
+
+.btnRegistrarse:hover{
+    background: #428bd2;
+}
+
+.info p{
+    width: 300px;
+    font-size: 10px;
+    margin-bottom: 30px;
+}
+
+.info p a{
+    text-decoration: none;
+    color: #1d9bf0;
+}
+
+.info p a:hover{
+    text-decoration: underline;
+}
+
+.cuenta{
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btnIniciar{
+    text-decoration: none;
+    color: rgb(29, 155, 240);
+    font-weight: bold;
+}
+
+nav{
+    padding: 16px;
+    text-align: center;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    color: #536371;
+    margin-right: 10px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px){
+    .contenedor{
+        flex-direction: column;
+        flex-flow:row wrap-reverse;
+    }
+    .logo{
+        width: 100%;
+        height: initial;
+    }
+    .info{
+        width: 568px;
+        min-width: 568px;
+        margin: auto;
+    }
+}
